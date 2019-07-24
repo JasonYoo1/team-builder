@@ -14,10 +14,12 @@ export const TeamForm = () => {
     const submitHandler = (event => {
         event.preventDefault()
         console.log(inputUser)
+        
     })
 
-    const changeHandler = (event) => {
-        console.log(event.target)
+    const changeHandler = (props) => {
+        console.log(props.target)
+        
     }
 
     return (
