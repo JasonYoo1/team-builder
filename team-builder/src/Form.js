@@ -17,6 +17,8 @@ export const TeamForm = () => {
         
     })
 
+    //made changeHandler return inputs as objects. idk
+    //what the plan is for this yet but it'll come in handy.
     const changeHandler = (props) => {
         console.log(props.target)
         
@@ -55,6 +57,7 @@ export const TeamForm = () => {
           </label>
           <button>Edit</button>
         </form>
+        <UserCard/>
     </div>
     );
 }
