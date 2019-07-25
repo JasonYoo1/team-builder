@@ -13,14 +13,14 @@ export const TeamForm = () => {
 
     const submitHandler = (event => {
         event.preventDefault()
-        console.log(inputUser)
+        console.log('This is my input OBJ', inputUser)
         
     })
 
     //made changeHandler return inputs as objects. idk
     //what the plan is for this yet but it'll come in handy.
     const changeHandler = (props) => {
-        console.log(props.target)
+        // console.log('This is my input OBJ', props.target)
         
     }
 
@@ -57,7 +57,7 @@ export const TeamForm = () => {
           </label>
           <button>Edit</button>
         </form>
-        <UserCard/>
+        <UserCard username={inputUser.username} email={inputUser.email} role={inputUser.role}/>
     </div>
     );
 }
